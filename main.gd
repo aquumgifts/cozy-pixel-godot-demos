@@ -51,10 +51,10 @@ func _ready() -> void:
 	links.position = Vector2(24, 290)
 	links.add_theme_constant_override("separation", 12)
 	ui.add_child(links)
-	var all := button("Every Cozy Space pack: Complete ↗", Vector2(300, 40), true)
+	var all := button("Every Cozy Space pack: Complete »", Vector2(300, 40), true)
 	all.pressed.connect(OS.shell_open.bind(COMPLETE))
 	links.add_child(all)
-	var more := button("More free packs ↗", Vector2(164, 40))
+	var more := button("More free packs »", Vector2(164, 40))
 	more.pressed.connect(OS.shell_open.bind(STORE))
 	links.add_child(more)
 

@@ -2,6 +2,8 @@
 
 Six small Godot 4 demos, each one script you can read in a minute, using free 16 px pixel art by **Bramble & Byte**.
 
+**▶ Play it in your browser:** https://aquumgifts.github.io/cozy-pixel-godot-demos/
+
 ![Menu](screenshots/menu.png)
 
 | Demo | What it shows | Art |
