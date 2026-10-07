@@ -1,0 +1,13 @@
+Art in this project — by Bramble & Byte
+License: Creative Commons Attribution 4.0 (CC-BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Covers the image files in these folders:
+cozy-space-backdrops, cozy-space-ships, cozy-space-platformer, cozy-space-icons-ui,
+cozy-space-interiors, cozy-space-furniture, cozy-space-tiny-crew, cozy-farm
+
+You can use, modify and share them, also in commercial games, as long as you give credit:
+
+    "Cozy Space" and "Cozy Farm" by Bramble & Byte — https://aquumgifts.itch.io
+
+The full packs (many more sprites) are free at https://aquumgifts.itch.io

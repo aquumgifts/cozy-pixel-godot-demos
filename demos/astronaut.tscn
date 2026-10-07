@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://demos/astronaut.gd" id="1"]
+[ext_resource type="PackedScene" path="res://demos/parallax.tscn" id="2"]
+
+[node name="Astronaut" type="Node2D"]
+
+[node name="Starfield" parent="." instance=ExtResource("2")]
+
+[node name="AstronautDemo" type="Node2D" parent="."]
+script = ExtResource("1")

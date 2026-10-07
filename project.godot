@@ -1,0 +1,29 @@
+; Engine configuration file.
+
+config_version=5
+
+[application]
+
+config/name="Cozy Pixel Demos"
+config/description="Six one-script Godot 4 demos with free 16 px pixel art by Bramble & Byte."
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.3")
+config/icon="res://icon.png"
+
+[autoload]
+
+DemoShell="*res://demo_shell.gd"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.051, 0.063, 0.125, 1)

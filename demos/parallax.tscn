@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://demos/parallax.gd" id="1"]
+[ext_resource type="Script" path="res://demos/spin.gd" id="2"]
+[ext_resource type="Texture2D" path="res://cozy-space-backdrops/planets/1x/planet-terran-spin-24f.png" id="3"]
+
+[node name="Parallax" type="Node2D"]
+script = ExtResource("1")
+
+[node name="Planet" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(470, 150)
+scale = Vector2(2, 2)
+texture = ExtResource("3")
+hframes = 24
+script = ExtResource("2")
