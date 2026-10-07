@@ -1,13 +1,26 @@
-Art in this project — by Bramble & Byte
-License: Creative Commons Attribution 4.0 (CC-BY 4.0)
-https://creativecommons.org/licenses/by/4.0/
+Art in this project — by Bramble & Byte (https://aquumgifts.itch.io)
 
-Covers the image files in these folders:
-cozy-space-backdrops, cozy-space-ships, cozy-space-platformer, cozy-space-icons-ui,
-cozy-space-interiors, cozy-space-furniture, cozy-space-tiny-crew, cozy-farm
+The code is MIT (see LICENSE). The art has three licenses, by folder:
 
-You can use, modify and share them, also in commercial games, as long as you give credit:
+1. cozy-space-backdrops/, cozy-space-ships/, cozy-space-platformer/, cozy-space-icons-ui/,
+   cozy-space-interiors/, cozy-space-furniture/, cozy-space-tiny-crew/, cozy-farm/
+   Creative Commons Attribution 4.0 (CC-BY 4.0), https://creativecommons.org/licenses/by/4.0/
+   Use, modify and share, also in commercial games, with this credit:
+       "Cozy Space" / "Cozy Farm" by Bramble & Byte — https://aquumgifts.itch.io
 
-    "Cozy Space" and "Cozy Farm" by Bramble & Byte — https://aquumgifts.itch.io
+2. cozy-farm-fishing/
+   Every file here is in the free Cozy Farm Fishing Lite pack. Use them in free
+   and commercial games and modify them; do not resell or redistribute them as
+   assets on their own. Full pack (12 fish, gear, rowboat, reeds and more):
+   https://aquumgifts.itch.io/cozy-farm-fishing
 
-The full packs (many more sprites) are free at https://aquumgifts.itch.io
+3. cozy-farm-seasons/, cozy-farm-village/, cozy-farm-ui/
+   A few sprites from paid packs, included so the demos run. You may run, study
+   and change this project. To use these sprites in your own game, get the pack:
+       Cozy Farm Seasons  https://aquumgifts.itch.io/cozy-farm-seasons
+       Cozy Farm Village  https://aquumgifts.itch.io/cozy-farm-village
+       Cozy Farm UI       https://aquumgifts.itch.io/cozy-farm-ui
+   Do not copy them out of this project or redistribute them.
+
+Every Cozy Space pack in one download: https://aquumgifts.itch.io/cozy-space-complete
+Every Cozy Farm art pack in one download: https://aquumgifts.itch.io/cozy-farm-premium

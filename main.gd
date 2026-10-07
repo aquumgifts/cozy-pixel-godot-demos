@@ -3,6 +3,7 @@ extends Node2D
 ## and links to the free packs the art comes from.
 
 const COMPLETE := "https://aquumgifts.itch.io/cozy-space-complete"
+const PREMIUM := "https://aquumgifts.itch.io/cozy-farm-premium"
 const STORE := "https://aquumgifts.itch.io"
 const UI := "res://cozy-space-icons-ui/ui/2x/"
 const DEMOS := [
@@ -12,12 +13,15 @@ const DEMOS := [
 	["Tiny farming loop", "farm"],
 	["Pixel HUD", "hud"],
 	["Top-down room", "room"],
+	["Fishing minigame", "fishing"],
+	["Summer, autumn, winter", "seasons"],
+	["Village shop", "shop"],
 ]
 
 
 func _ready() -> void:
 	var bg: Node2D = load("res://demos/parallax.tscn").instantiate()
-	bg.get_node("Planet").position = Vector2(560, 70)
+	bg.get_node("Planet").position = Vector2(592, 42)
 	add_child(bg)
 	var ui := CanvasLayer.new()
 	add_child(ui)
@@ -25,36 +29,39 @@ func _ready() -> void:
 	var title := label("Cozy Pixel Demos", 32)
 	title.position = Vector2(24, 18)
 	ui.add_child(title)
-	var sub := label("Six one-script Godot 4 demos · free pixel art by Bramble & Byte", 12)
+	var sub := label("Nine one-script Godot 4 demos · pixel art by Bramble & Byte", 12)
 	sub.position = Vector2(26, 60)
 	sub.modulate = Color("c9b8ff")
 	ui.add_child(sub)
 
 	var grid := GridContainer.new()
-	grid.columns = 2
-	grid.position = Vector2(24, 96)
+	grid.columns = 3
+	grid.position = Vector2(24, 92)
 	grid.add_theme_constant_override("h_separation", 12)
 	grid.add_theme_constant_override("v_separation", 10)
 	ui.add_child(grid)
 	for d in DEMOS:
-		var b := button(d[0], Vector2(232, 40))
+		var b := button(d[0], Vector2(190, 36))
 		b.pressed.connect(func(): get_tree().change_scene_to_file("res://demos/%s.tscn" % d[1]))
 		grid.add_child(b)
 	(grid.get_child(0) as Button).grab_focus()
 
-	var note := label("Art: free packs by Bramble & Byte on itch.io (CC-BY 4.0 in this project)", 11)
-	note.position = Vector2(26, 266)
+	var note := label("Art by Bramble & Byte on itch.io (licenses in ASSETS-LICENSE.txt)", 11)
+	note.position = Vector2(26, 252)
 	note.modulate = Color("c9b8ff")
 	ui.add_child(note)
 
 	var links := HBoxContainer.new()
-	links.position = Vector2(24, 290)
+	links.position = Vector2(24, 276)
 	links.add_theme_constant_override("separation", 12)
 	ui.add_child(links)
-	var all := button("Every Cozy Space pack: Complete »", Vector2(300, 40), true)
+	var all := button("Cozy Space Complete »", Vector2(206, 40), true)
 	all.pressed.connect(OS.shell_open.bind(COMPLETE))
 	links.add_child(all)
-	var more := button("More free packs »", Vector2(164, 40))
+	var farm := button("Cozy Farm Premium »", Vector2(206, 40), true)
+	farm.pressed.connect(OS.shell_open.bind(PREMIUM))
+	links.add_child(farm)
+	var more := button("More packs »", Vector2(156, 40))
 	more.pressed.connect(OS.shell_open.bind(STORE))
 	links.add_child(more)
 

@@ -10,6 +10,9 @@ const HINTS := {
 	"farm": "Arrows: walk · Space: plant a carrot, then harvest it when it is ripe",
 	"hud": "Oxygen drains on its own · click the button to refill it",
 	"room": "Arrows: walk around the furniture (y-sorted)",
+	"fishing": "Arrows: walk to the end of the dock · Space: cast, then again when the bobber dips",
+	"seasons": "Space: next season",
+	"shop": "Arrows: walk · Space at the shop door: enter · Arrows + Space: buy",
 }
 
 var hint := Label.new()
